@@ -46,10 +46,9 @@ public class Dragon
     @Override
     public String toString()
     {
-        return "Dragon{" +
-                "dragonName='" + dragonName + '\'' +
-                "\nmight= " + might +
-                "\nisHostile= " + isHostile +
-                '}';
+        return "This Dragon has:" +
+                "\n\tName = " + dragonName +
+                "\n\tmight = " + might +
+                "\n\tisHostile = " + isHostile;
     } // end toString (there is only one!)
 }//end dragon classs
