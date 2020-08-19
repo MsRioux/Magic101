@@ -1,54 +1,28 @@
-public class Dragon
+public class Dragon extends Enemy
 {
     //instance variables
-    String dragonName;
-    int might;
-    boolean isHostile;
+    boolean hasFire;
 
     //constructors
-    public Dragon(String dragonName, int might, boolean isHostile)
+    public Dragon(String name, int might, boolean isHostile, boolean hasFire)
     {
-        this.dragonName = dragonName;
-        this.might = might;
-        this.isHostile = isHostile;
+        super(name, might, isHostile);
+        this.hasFire = hasFire;
     }// end full constructor
 
     public Dragon()
     {
-        dragonName = null;
-        might = 0;
-        isHostile = true;
+        super();
+        hasFire = false;
     }//end null constructor
 
-    //getters
-    public String getDragonName()
-    {
-        return dragonName;
-    }//end getDragonName
 
-    public int getMight()
-    {
-        return might;
-    }
-
-    //setters
-    public void setDragonName(String dragonName)
-    {
-        this.dragonName = dragonName;
-    }
-
-    public void setMight(int might)
-    {
-        this.might = might;
-    }
     //toString   this is the test output method
 
     @Override
     public String toString()
     {
-        return "This Dragon has:" +
-                "\n\tName = " + dragonName +
-                "\n\tmight = " + might +
-                "\n\tisHostile = " + isHostile;
+        return super.toString() +
+                "\n\thasFire = " + hasFire;
     } // end toString (there is only one!)
 }//end dragon classs
