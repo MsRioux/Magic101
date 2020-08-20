@@ -44,7 +44,7 @@ public abstract class Enemy
 
     public String toString()
     {
-        return "This Dragon has:" +
+        return "This Enemy has:" +
                 "\n\tName = " + name +
                 "\n\tmight = " + might +
                 "\n\tisHostile = " + isHostile;
