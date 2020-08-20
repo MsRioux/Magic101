@@ -19,6 +19,15 @@ public class Dragon extends Enemy
         this.wingspan = 0;
     }//end null constructor
 
+    public double getWingspan()
+    {
+        return wingspan;
+    }
+
+    public void setWingspan(double wingspan)
+    {
+        this.wingspan = validateWingspan(wingspan);
+    }
 
     //Brain Methods
     //Data validation

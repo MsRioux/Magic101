@@ -28,6 +28,9 @@ public class MagicDriver
 
         System.out.println(happy.toString());
         System.out.println(nobody.toString());
+
+        nobody.setWingspan(-2);
+        System.out.println(nobody.toString());
 /*
         System.out.println(ogre.toString());
         System.out.println(nothing.toString());
