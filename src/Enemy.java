@@ -3,12 +3,15 @@ public abstract class Enemy
     String name;
     int might;
     boolean isHostile;
+    static int countEnemies = 0;
 
     public Enemy(String name, int might, boolean isHostile)
     {
         this.name = name;
         this.might = might;
         this.isHostile = isHostile;
+        countEnemies++;
+
     }// end full constructor
 
     public Enemy()
@@ -16,6 +19,8 @@ public abstract class Enemy
         this.name = null;
         this.might = 0;
         this.isHostile = true;
+        countEnemies++;
+
     }// end full constructor
 
 
@@ -40,7 +45,6 @@ public abstract class Enemy
     {
         this.might = might;
     }
-
 
     public String toString()
     {
