@@ -1,12 +1,30 @@
+import java.util.ArrayList;
+
 public class MagicDriver
 {
     public static void main(String[] args)
     {
         //create an object
-        Dragon happy = new Dragon("Happy", 20, false, true, -5);
+        Dragon happy = new Dragon("Happy", 20, false, true, 20);
         Dragon nobody = new Dragon();
         Monster ogre = new Monster("OgreBob", 15, true, "air");
         Monster nothing = new Monster();
+
+        System.out.printf("Watch out, there are %d enemies attacking! %n%n", Enemy.countEnemies);
+
+        //Creating an ArrayList
+        ArrayList<Enemy> enemyArrayList = new ArrayList<>();
+        enemyArrayList.add(happy);
+        enemyArrayList.add(nobody);
+        enemyArrayList.add(ogre);
+        enemyArrayList.add(nothing);
+
+        for(int i = 0; i < enemyArrayList.size(); i++)
+        {
+            System.out.println(enemyArrayList.get(i));
+        }
+
+
 /*
         Enemy[] enemyList = {happy, nobody, ogre, nothing};
 
@@ -22,7 +40,7 @@ public class MagicDriver
             System.out.println();
         }//end loop to print out the list of enemies
 */
-
+/*
 
         //print out the object via toString
 
@@ -31,6 +49,9 @@ public class MagicDriver
 
         nobody.setWingspan(-2);
         System.out.println(nobody.toString());
+
+
+ */
 /*
         System.out.println(ogre.toString());
         System.out.println(nothing.toString());
